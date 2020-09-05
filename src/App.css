@@ -12,13 +12,13 @@
 }
 
 .whiteboard {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
+  /* height: 100%;
+  width: 100%; */
+  /* position: absolute; */
+  /* left: 0;
   right: 0;
   bottom: 0;
-  top: 0;
+  top: 0; */
 }
 
 .colors {
@@ -36,3 +36,4 @@
 .color.green { background-color: green; }
 .color.blue { background-color: blue; }
 .color.yellow { background-color: yellow; }
+

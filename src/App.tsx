@@ -8,7 +8,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Page/> */}
-        <DesignCanvas width={5.65} height={2.65} />
+        <div style={{alignContent:'center', display:'flex', justifyContent:"center"}}>
+          <DesignCanvas />
+        </div>
+
       </header>
     </div>
   );
