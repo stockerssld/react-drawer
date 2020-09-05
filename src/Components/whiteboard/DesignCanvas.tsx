@@ -48,7 +48,7 @@ export function DesignCanvas(){
 
     const onChangeT=(name:any,val:any, erase:boolean)=>{
         const value=val.target.value 
-        statesetState({...state, [name]:value})
+        statesetState({...state, [name]:value, isPencil:erase})
     }
 
     const onCLickT=()=>{
@@ -57,13 +57,13 @@ export function DesignCanvas(){
     return(
         <>
             <div  className="colors">
-                <input ref={colorsRef} type="color" value={state.backgroundColor} onChange={(val)=>onChangeT('backgroundColor',val, false)}/>
+                <input ref={colorsRef} type="color" value={state.backgroundColor} onChange={(val)=>onChangeT('backgroundColor',val, true)}/>
                 <div  onClick={()=>onCLickT()} >
                     Borrador
                 </div>
                 <input ref={sizeLSRef} type="number" value={state.sizeLW} onChange={(val)=>onChangeT('sizeLW',val, false)}/>
             </div>  
-             <canvas ref={canvasRef }    id="canvas" width={dp(50)} height={dp(50)} style={{backgroundColor:'purple'}}>
+             <canvas ref={canvasRef }    id="canvas" width={dp(50)} height={dp(50)} style={{backgroundColor:'green'}}>
                 Tu navegador no soporta canvas
             </canvas>
         </>
