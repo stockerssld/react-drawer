@@ -8,8 +8,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* <Page/> */}
-        <DesignCanvas width={50} height={50} />
-        
+        <DesignCanvas width={5.65} height={2.65} />
       </header>
     </div>
   );
